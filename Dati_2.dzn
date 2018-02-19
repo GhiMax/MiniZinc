@@ -1,0 +1,22 @@
+
+m=18;																		%numero dei corsi	
+
+corsi 	= ["Analisi", "Fisica", "Geometria", "Informatica", "Sistemi", "Elettronica", "Chimica", "Laboratorio", "Calcolatori", "Inglese", "IA", "Calcolo", "Teoria dei segnali", "Automatica", "Teoria dei circuiti", "Statistica", "Meccanica", "Metodi"];
+
+ac 		= [1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3];														%Anno curricolare per ogni corso
+
+hc 		= [3,5,6,4,3,7,4,5,6,3,3,3,5,6,7,3,4,4];														%Ore settimanali per ogni corso
+
+k=8; 																		%numero dei docenti
+
+docenti = ["Rossi", "Bianchi", "Sordi", "Nocentini", "Tiossi", "Bindi", "Biason", "Verdi"];
+
+insegna = [|
+	1,0,0,1,1,0,1,0,0,0,1,1,0,0,0,0,1,0|
+	1,0,0,0,0,1,1,0,1,1,1,0,0,0,1,0,0,0|
+	0,0,1,0,1,0,0,0,1,0,1,1,0,1,0,1,0,1|
+	0,1,1,1,1,0,0,1,0,0,1,1,0,1,0,1,0,1|
+	1,1,1,1,1,0,0,1,1,1,0,0,0,0,1,0,1,0|
+	1,1,1,1,1,0,0,1,1,1,0,0,0,0,0,1,1,1|
+	1,1,1,1,1,0,0,1,1,1,0,1,1,1,0,1,0,1|
+	1,1,1,1,1,0,0,1,1,1,0,1,0,1,0,1,0,1|];
